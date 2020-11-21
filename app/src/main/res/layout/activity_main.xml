@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/guitarra_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="onClick"
+        android:text="Guitarra"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/violin_btn"
+        app:layout_constraintTop_toBottomOf="@+id/piano_btn"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/violin_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="onClick"
+        android:text="Violin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/saxofon_btn"
+        app:layout_constraintTop_toBottomOf="@+id/guitarra_btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/piano_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="play_piano"
+        android:text="Piano"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guitarra_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/trompeta_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="onClick"
+        android:text="Trompeta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/bajo_btn"
+        app:layout_constraintTop_toBottomOf="@+id/saxofon_btn"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/saxofon_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="onClick"
+        android:text="Saxofon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/trompeta_btn"
+        app:layout_constraintTop_toBottomOf="@+id/violin_btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bajo_btn"
+        android:layout_width="410dp"
+        android:layout_height="88dp"
+        android:onClick="onClick"
+        android:text="bajo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trompeta_btn"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
